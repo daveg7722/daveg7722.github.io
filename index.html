@@ -206,6 +206,10 @@
                         while the local state relies on React Hooks. Interfacing with AWS was done both in the online console and through the terminal, 
                         via the Amplify CLI.                                                      
                     </p>
+                        To create a post or add comments to an existing post, the user must create an account, authenticated by Amazon Cognito. Upon 
+                        the creation of an account, the user is stored in a DynamoDB table. Any posts or comments that a user creates are likewise stored 
+                        in their respective table. Through GraphQL subscriptions, all CRUD operations for both posts and comments are seen in real-time across
+                        all users. 
                     <p>
                         
                     </p>
